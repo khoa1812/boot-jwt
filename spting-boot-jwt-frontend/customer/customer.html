@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DS sản phẩm</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="customer.js"></script>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+<h1 id="title">DANH SÁCH SẢN PHẨM</h1>
+<div id="div-btn">
+    <button onclick="successHandler()" id="display">Hiển Thị Danh Sách</button>
+    <button onclick="displayFormCreate()" id="display-create">Thêm Sản Phẩm Mới</button>
+</div>
+<div id="customerList"></div>
+
+<form id="add-customer" style="display:none;">
+    <h1>Thêm Sản Phẩm Mới</h1>
+    <table>
+        <tr>
+            <td><label for="name">Tên </label></td>
+            <td><input type="text" id="name" placeholder="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="age">Tuổi:</label></td>
+            <td><input type="number" id="age" placeholder="age" required></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Giới tính:</label></td>
+            <td><input type="text" id="gender" placeholder="gender" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Địa chỉ:</label></td>
+            <td><input type="text" id="address" placeholder="address" required></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Thêm"></td>
+        </tr>
+    </table>
+</form>
+
+<form id="update-customer" style="display:none;">
+    <h1>Cập Nhật Sản Phẩm</h1>
+    <table>
+        <tr>
+            <td><label for="update-name">Tên:</label></td>
+            <td><input type="text" id="update-name" placeholder="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="update-age">Tuổi:</label></td>
+            <td><input type="number" id="update-age" placeholder="age" required></td>
+        </tr>
+        <tr>
+            <td><label for="update-gender">Giới tính:</label></td>
+            <td><input type="text" id="update-gender" placeholder="gender" required></td>
+        </tr>
+        <tr>
+            <td><label for="update-address">Địa chỉ:</label></td>
+            <td><input type="text" id="update-address" placeholder="address" required></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Cập Nhật"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
